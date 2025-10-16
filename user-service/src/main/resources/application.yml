@@ -1,5 +1,5 @@
 server:
-  port: 9002
+  port: 9091
 
 spring:
   application:
@@ -10,4 +10,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://127.0.0.1:8765/eureka
+      defaultZone: http://awsgoo-eureka-1:9090/eureka
