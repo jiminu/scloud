@@ -10,4 +10,11 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8765/eureka/
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+management:
+  metrics:
+    enable:
+      system: false
+    binders:
+      processor:
+        enabled: false
